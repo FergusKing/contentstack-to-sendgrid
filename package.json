@@ -1,0 +1,27 @@
+{
+  "name": "contentstack-to-sendgrid",
+  "version": "0.0.1",
+  "description": "POC to create a email campaign in sendgrid from contentstack data",
+  "main": "app.js",
+  "scripts": {
+    "start": "npm run production",
+    "heroku-prebuild": "npm install",
+    "dev": "nodemon app",
+    "production": "node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FergusKing/contentstack-to-sendgrid.git"
+  },
+  "author": "Fergus King",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FergusKing/contentstack-to-sendgrid/issues"
+  },
+  "homepage": "https://github.com/FergusKing/contentstack-to-sendgrid#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "socket.io": "^2.1.1"
+  }
+}
