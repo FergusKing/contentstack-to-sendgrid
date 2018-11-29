@@ -35,6 +35,7 @@ var emailHtml = [
         mb: 16
     }    
 ]
+var linkHtml = '<a style="color:#2b7bb9; font-family:Helvetica,Arial,sans-serif; font-size:15px; font-weight:bold; line-height:100%; text-decoration:none;"'
 
 async function convertToEmail(htmlStr){
     return new Promise(function(res,rej){
@@ -46,6 +47,7 @@ async function convertToEmail(htmlStr){
             htmlStr = htmlStr.replace(RegExp('<' + emailHtml[x].el + '>',"g"), mt + emailHtml[x].open)
             htmlStr = htmlStr.replace(RegExp('<\/' + emailHtml[x].el + '>',"g"), emailHtml[x].close + mb)
         }
+        htmlStr = htmlStr.replace(RegExp('<a (?!class="template")', 'g'),linkHtml)
         res(htmlStr)
     })
 }
