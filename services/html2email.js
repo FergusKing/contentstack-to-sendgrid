@@ -35,7 +35,7 @@ var emailHtml = [
         mb: 16
     }    
 ]
-var linkHtml = '<a style="color:#2b7bb9; font-family:Helvetica,Arial,sans-serif; font-size:15px; font-weight:bold; line-height:100%; text-decoration:none;"'
+var linkHtml = ' <a style="color:#2b7bb9; font-family:Helvetica,Arial,sans-serif; font-size:15px; font-weight:bold; line-height:100%; text-decoration:none;"'
 
 async function convertToEmail(htmlStr){
     return new Promise(function(res,rej){
